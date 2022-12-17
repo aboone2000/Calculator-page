@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: sans-serif
 }
 
 .app{
@@ -47,6 +47,15 @@
     overflow: auto;
 }
 
+.display .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+}
+
 .display .operator{
     color: #eb66eb;
 }
@@ -72,4 +81,32 @@
  .keys .key{
     position: relative;
     cursor: pointer;
+    display: block;
+    height: 0;
+    padding-top: 100%;
+    background-color: #262933;
+    border-radius: 1rem;
+    transition: 0.2s;
+    user-select: none;
+ }
+
+ .keys .key span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFF;
+ }
+ .keys .key:hover{
+    box-shadow: inset 0px 0px 8px rgba(#33358f)
+ }
+
+ .keys .key .operator span{
+    color: red;
+ }
+ .keys.key.action{
+    color: lightgreen;
  }
