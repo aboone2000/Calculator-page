@@ -12,7 +12,7 @@
     height: 100vh;
 }
 .calculator{
-    background-color: #33358f;
+    background-color: #04c52e;
     width: 100%;
     max-width: 375px;
     min-height: 640px;
@@ -57,7 +57,7 @@
 }
 
 .display .operator{
-    color: #eb66eb;
+    color: #000000;
 }
 
 
@@ -98,15 +98,15 @@
 
     font-size: 2rem;
     font-weight: 700;
-    color: #FFF;
+    color: rgb(255, 255, 255);
  }
  .keys .key:hover{
     box-shadow: inset 0px 0px 8px rgba(#33358f)
  }
 
- .keys .key .operator span{
-    color: red;
+ .keys .key.operator span{
+    color: rgb(8, 187, 23);
  }
- .keys.key.action{
-    color: lightgreen;
+ .key.action span{
+    color: rgb(0, 166, 216);
  }
